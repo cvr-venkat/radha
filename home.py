@@ -4,3 +4,4 @@ from os import kill
 
 range
 kill
+red
