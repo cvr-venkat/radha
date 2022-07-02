@@ -1,0 +1,6 @@
+---
+- name: install postgres
+  hosts: database
+  roles:
+    - role: pescobar.postgres
+      become: yes
