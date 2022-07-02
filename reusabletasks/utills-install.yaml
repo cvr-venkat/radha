@@ -2,7 +2,7 @@
 #write the task directly
 - name: install utility
   ansible.builtin.package:
-    name: "{{ java_package }}"
+    name: "{{ item }}"
     state: present
   loop:
     - git
@@ -12,4 +12,3 @@
   ansible.builtin.file:
     path: /tmp/message
     state: file
-          
