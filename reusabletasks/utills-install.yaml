@@ -1,0 +1,15 @@
+---
+#write the task directly
+- name: install utility
+  ansible.builtin.package:
+    name: "{{ java_package }}"
+    state: present
+  loop:
+    - git
+    - tree
+    - nano
+- name: ensure the file is created
+  ansible.builtin.file:
+    path: /tmp/message
+    state: file
+          

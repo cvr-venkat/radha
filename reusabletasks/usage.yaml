@@ -1,0 +1,6 @@
+---
+- name: using task
+  welcome: yes
+  hosts: all
+  tasks:
+    - include_tasks: utills-install.yaml
