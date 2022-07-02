@@ -11,4 +11,4 @@
 - name: ensure the file is created
   ansible.builtin.file:
     path: /tmp/message
-    state: file
+    state: present
